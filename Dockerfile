@@ -7,7 +7,7 @@ RUN dotnet publish -c Release -o /app
 
 #Stage 2
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:5.0-bionic AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:5.0-alpine AS base
 
 RUN sed -i 's/MinProtocol = TLSv1.2/MinProtocol = TLSv1/g' /etc/ssl/openssl.cnf
 
