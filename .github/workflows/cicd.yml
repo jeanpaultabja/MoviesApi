@@ -26,4 +26,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: jptabja/flightsapi:v4  # Please change the username here
+          tags: jptabja/moviesapi:v4  # Please change the username here
